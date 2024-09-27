@@ -1,0 +1,371 @@
+body {
+background:#212;
+font-family: sans-serif;
+}
+
+.name {
+color: black;
+font-size: 10;
+}
+
+.ability {
+font-size: 20;
+}
+* {
+}
+
+.main.container{
+    height:0;
+    width:100%;
+    max-width:none!important;
+    position:relative;
+    top:64px;
+}
+table {
+margin:auto;
+transform: rotate(45deg) scale(1);
+table-layout: fixed;
+background: rgba(255, 255, 255, 0.5);
+z-index: 4;
+border-top: 2px solid red;
+border-bottom: 2px solid blue;
+border-right: 2px solid red;
+border-left: 2px solid blue;
+}
+
+td,
+th {
+padding: 0px;
+margin: 0px;
+text-align: center;
+}
+
+th {
+font-weight: bold;
+font-size: 1.5em;
+color: yellow;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+font-weight: bold;
+border: 2px solid red;
+}
+
+th .blue {
+border: 2px solid blue;
+}
+
+td {
+font-size: 8pt;
+}
+
+.blank {
+background: #d0eaf2;
+color: white;
+border: none;
+}
+
+.sidetext {
+transform: rotate(270deg);
+}
+
+.moveText {
+font-size: 10pt;
+text-align: left;
+font-weight: 550;
+color: darkred;
+border: none;
+}
+
+.bluemoveText {
+font-size: 10pt;
+text-align: right;
+color: darkblue;
+text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
+position: relative;
+left: -5px;
+min-height: 30px;
+max-height: 33px;
+}
+
+.redmoveText {
+position: relative;
+color: #8b0000;
+text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
+bottom: -37px;
+max-height: 115px;
+width:32px;
+max-width:32px;
+}
+
+.redVert div {
+    position:relative;
+    height:100%;
+    bottom:4px;
+}
+
+.redStats div {
+    transform: rotate(180deg)!important;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: relative;
+    left:8px;
+}
+
+.redStats {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    height: 0;
+    width:32px;
+}
+
+.blueStats {
+font-size: 9pt;
+font-weight: bold;
+text-align: center;
+border: none;
+min-height: 30px;
+max-height: 33px;
+}
+
+.redNames {
+position: relative;
+background: rgba(0, 0, 0, 0.7);
+vertical-align: bottom
+}
+
+.blueNames {
+text-align: left;
+background: rgba(0, 0, 0, 0.7);
+border: 2px solid blue;
+}
+
+table * {
+    white-space: nowrap
+}
+
+td {
+    position:relative;
+}
+td img {
+    margin:-32px;
+}
+
+.Visualhead {
+border-left: none;
+border-bottom: 2px solid blue;
+border-right: border: 2px solid red;
+border-top: none;
+position: relative;
+z-index: -50;
+background: rgba(0, 0, 0, 0.1);
+}
+
+.HP {
+background: #00FF00;
+}
+
+.atk {
+background: #ff6e6e;
+}
+
+.def {
+background: #696bee;
+}
+
+.spA {
+background: orange;
+}
+
+.spD {
+background: #bb70ff;
+}
+
+.spe {
+background: cyan;
+}
+
+.blueAbility {
+font-size: 10pt;
+background: #999;
+font-weight: 550;
+border: none;
+text-align: center;
+color: black;
+}
+
+.blueAbility .redAbility {
+color: white;
+position: relative;
+left: 5px;
+bottom: -10px;
+}
+
+.blueItem {
+text-align: right;
+font-size: 10pt;
+min-height: 30px;
+max-height: 33px;
+background: #999;
+font-weight: 550;
+border: none;
+text-align: center;
+color: black;
+}
+
+.blueItem .redItem {
+color: white;
+position: relative;
+bottom: -10px;
+}
+
+
+.redStatMods {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.weatherselect {
+position: absolute;
+text-align: right;
+bottom: 10px;
+right: 10px;
+z-index: -10;
+}
+
+.blueStatMods {
+position: absolute;
+top: 10px;
+left: 20px;
+}
+
+.btn-sand {
+background: brown;
+color: yellow;
+}
+
+.btn-sss {
+padding: 0px;
+font-size: .875rem;
+line-height: 1.5;
+border-radius: 0.2rem;
+text-align: center;
+position: relative;
+}
+
+.input-stat {
+color: yellow;
+text-align: center;
+padding: 0px;
+margin: 0px;
+font-size: 1rem;
+border-radius: 0.2rem;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+position: relative;
+top: 0.45em;
+}
+
+.blue-input-stat {
+position: relative;
+top: -0.1em;
+left: 0.4em;
+border: blue;
+}
+
+th.container>div {
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+th.container {
+height: 20px;
+}
+
+.blue-reg-mod-stat {
+position: relative top: -2em;
+}
+
+.input-HP {
+overflow: hidden;
+width:32px;
+height:32px;
+}
+
+.mod-stat {
+text-align: center;
+padding: 0px;
+margin: 0px;
+font-size: 1rem;
+border-radius: 0.2rem;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+position: relative;
+top: 1em;
+}
+
+.blue-mod-stat {
+align-self: center;
+position: relative;
+top: -0.2em;
+border: blue;
+}
+
+.red0Final {
+background-color: #888;
+border-radius: 0px 0px 10px 10px;
+}
+
+.redlt1Final {
+background-color: #ff7777;
+border-radius: 0px 0px 10px 10px;
+}
+
+.red1Final {
+background-color: #ffff77;
+border-radius: 0px 0px 10px 10px;
+}
+
+.redmt1Final {
+background-color: #77ff77;
+border-radius: 0px 0px 10px 10px;
+}
+
+.red0Int {
+background-color: #888;
+border: none;
+}
+
+.redlt1Int {
+background-color: #ff7777;
+border: none;
+}
+
+.red1Int {
+background-color: #ffff77;
+border: none;
+}
+
+.redmt1Int {
+background-color: #77ff77;
+border: none;
+}
+
+.merge-bottom-input {
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+.merge-top-left-button {
+border-top-left-radius: 0;
+}
+
+.merge-top-right-button {
+border-top-right-radius: 0;
+}
+
+.bg-white {
+background: white;
+}

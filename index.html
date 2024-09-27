@@ -1,0 +1,5459 @@
+<!DOCTYPE html>
+<title>Visualizer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    /*min-width:800px !important;*/
+}
+</style>
+<main class="bg">
+    <div>
+        <div class="container main">
+            <table align="center" id="Visss">
+                <tr>
+                    <td rowspan="6" colspan="2" style="background: rgba(0, 0, 0, 0.1);"></td>
+                    <th colspan="6" rowspan="6" class="Visualhead">
+                        <div id="Warning" style="transform: rotate(315deg); z-index: -20; display:none; ">Error 404: Cannot find current match. Refresh later.</div>
+                    </th>
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div id="1_0_Name" style="font-size: 0.6em;"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_0_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">282</span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_0_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_0_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_0_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_0_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_0_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div id="1_1_Name" style="font-size: 0.6em;"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_1_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">310</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus"></span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_1_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_1_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_1_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_1_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_1_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div style="font-size: 0.6em;" id="1_2_Name"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_2_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">362</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus"></span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_2_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_2_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_2_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_2_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_2_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div style="font-size: 0.6em;" id="1_3_Name"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_3_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">362</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus"></span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_3_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_3_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_3_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_3_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_3_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div style="font-size: 0.6em;" id="1_4_Name"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_4_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">362</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus"></span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_4_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_4_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_4_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_4_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_4_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    
+                    <th colspan="6" rowspan="2" class="redNames">
+                        <div style="font-size: 0.6em; " id="1_5_Name"></div>
+                        <div class="container">
+                            <div class="row" style="min-width: 192px;">
+                                <div>
+                                    <label style="transform: rotate(270deg); position: relative; top: 1em; left:-0.8em;">
+                                        <span class="mod-stat HP">HP&nbsp;</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input input-HP" id="1_5_5" name="first" contenteditable="true" style="transform: rotate(270deg); position: relative; top: 1.5em;">362</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus"></span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat atk">atk</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_5_0" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat def">def</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_5_1" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spA">spA</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_5_2" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="mod-stat spD">spD</span>
+                                    </label>
+                                    <span class="form-control input-stat merge-bottom-input" id="1_5_3" name="first">0</span>
+                                    <span class="btn-group btn-block" aria-label="plus-minus">
+                                        <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                        <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label>
+                                            <span class="mod-stat spe">spe</span>
+                                        </label>
+                                        <span class="form-control input-stat merge-bottom-input" id="1_5_4" name="first">0</span>
+                                        <span class="btn-group btn-block" aria-label="plus-minus">
+                                            <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                            <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats HP">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats atk">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats def">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spA">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spD">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                    <td class="redStats spe" style="border-right: 2px solid red;">
+                        <div style="transform: rotate(270deg);"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" colspan="2" id="redimg1" style="border-bottom: 1px solid grey; height: 164px;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_0_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_0_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_0_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_0_3_Acc"></td>
+                    <td rowspan="3" colspan="2" id="redimg2" style="border-bottom: 1px solid grey;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_1_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_1_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_1_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_1_3_Acc"></td>
+                    <td rowspan="3" colspan="2" id="redimg3" style="border-bottom: 1px solid grey;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_2_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_2_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_2_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_2_3_Acc"></td>
+                    <td rowspan="3" colspan="2" id="redimg4" style="border-bottom: 1px solid grey; height: 164px;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_3_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_3_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_3_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_3_3_Acc"></td>
+                    <td rowspan="3" colspan="2" id="redimg5" style="border-bottom: 1px solid grey;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_4_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_4_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_4_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_4_3_Acc"></td>
+                    <td rowspan="3" colspan="2" id="redimg6" style="border-bottom: 1px solid grey;"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_5_0_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_5_1_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; color: black; text-shadow: none; " id="1_5_2_Acc"></td>
+                    <td class="sidetext redmoveText moveText" style="position: relative; top: 10px; border-right: 2px solid red; color: black; text-shadow: none; " id="1_5_3_Acc"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_0_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_0_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_0_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_0_3_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_1_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_1_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_1_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_1_3_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_2_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_2_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_2_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_2_3_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_3_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_3_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_3_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_3_3_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_4_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_4_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_4_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_4_3_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_5_0_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_5_1_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-bottom: 1px solid grey;" id="1_5_2_Name"></td>
+                    <td rowspan="2" class="sidetext redmoveText moveText" style="border-right: 2px solid red;border-bottom: 1px solid grey;" id="1_5_3_Name"></td>
+                </tr>
+                <tr></tr>
+<tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_0_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_0_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg1" style="min-width:164px"></td>
+    <td class="speedtie speedtie00" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f1" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie01" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l1" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie02" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r1" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie03" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w1" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie04" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A1" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie05" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D1">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E1" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_0_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f2" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l2" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r2" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w2" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A2" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D2">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E2" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_0_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_0_0_Name"></span>
+    <div id="0_0_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t3">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_0_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_0_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_0_1_Acc"></div>
+    </td>
+    <td id="a4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t4">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_0_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_0_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_0_2_Acc"></div>
+    </td>
+    <td id="a5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t5">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_0_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_0_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_0_3_Acc"></div>
+    </td>
+    <td id="a6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t6" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_1_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_1_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg2"></td>
+    <td class="speedtie speedtie10" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f7" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie11" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l7" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie12" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r7" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie13" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w7" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie14" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A7" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie15" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D7">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E7" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_1_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f8" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l8" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r8" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w8" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A8" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D8">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E8" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_1_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_1_0_Name"></span>
+    <div id="0_1_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t9">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_1_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_1_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_1_1_Acc"></div>
+    </td>
+    <td id="a10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t10">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_1_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_1_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_1_2_Acc"></div>
+    </td>
+    <td id="a11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t11">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_1_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_1_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_1_3_Acc"></div>
+    </td>
+    <td id="a12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t12" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_2_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_2_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg3"></td>
+    <td class="speedtie speedtie20" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f13" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie21" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l13" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie22" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r13" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie23" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w13" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie24" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A13" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie25" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D13">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E13" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_2_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f14" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l14" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r14" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w14" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A14" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D14">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E14" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_2_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_2_0_Name"></span>
+    <div id="0_2_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t15">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_2_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_2_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_2_1_Acc"></div>
+    </td>
+    <td id="a16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t16">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_2_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_2_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_2_2_Acc"></div>
+    </td>
+    <td id="a17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t17">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_2_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_2_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_2_3_Acc"></div>
+    </td>
+    <td id="a18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t18" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_3_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_3_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg4"></td>
+    <td class="speedtie speedtie30" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f19" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie31" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l19" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie32" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r19" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie33" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w19" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie34" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A19" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie35" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D19">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E19" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_3_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f20" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l20" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r20" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w20" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A20" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D20">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E20" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_3_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_3_0_Name"></span>
+    <div id="0_3_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t21">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_3_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_3_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_3_1_Acc"></div>
+    </td>
+    <td id="a22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t22">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_3_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_3_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_3_2_Acc"></div>
+    </td>
+    <td id="a23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t23">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_3_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_3_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_3_3_Acc"></div>
+    </td>
+    <td id="a24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t24" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_4_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_4_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg5"></td>
+    <td class="speedtie speedtie40" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f25" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie41" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l25" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie42" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r25" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie43" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w25" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie44" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A25" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie45" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D25">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E25" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_4_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f26" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l26" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r26" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w26" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A26" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D26">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E26" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_4_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_4_0_Name"></span>
+    <div id="0_4_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t27">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_4_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_4_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_4_1_Acc"></div>
+    </td>
+    <td id="a28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t28">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_4_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_4_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_4_2_Acc"></div>
+    </td>
+    <td id="a29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t29">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_4_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_4_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_4_3_Acc"></div>
+    </td>
+    <td id="a30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t30" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th rowspan="6" colspan="2" class="blueNames">
+        <div>
+            <div id="0_5_Name" style="transform: rotate(180deg); font-size: 0.6em; border-right: none; writing-mode: vertical-rl; text-orientation: mixed; width:64px; text-align:center"></div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat blue-mod-stat HP">HP&nbsp;</div>
+        </div>
+    </th>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <span class="form-control input-stat blue-input-stat merge-bottom-input input-HP" id="0_5_5" name="first" contenteditable="true"></span>
+        </div>
+    </th>
+    
+    <td class="blueStats HP"></td>
+    <td rowspan="2" colspan="3" id="blueimg6"></td>
+    <td class="speedtie speedtie50" rowspan="2" colspan="2" style="border-left: 1px solid grey;"></td>
+    <td id="c31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="d31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="e31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="f31" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie51" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="i31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="j31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="k31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="l31" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie52" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="o31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="p31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="q31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="r31" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie53" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="t31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="u31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="v31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="w31" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie54" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="x31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="y31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="z31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="A31" style="border-right: 1px solid grey;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td class="speedtie speedtie55" rowspan="2" colspan="2">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="B31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="C31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="D31">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    <td id="E31" style="border-right: 2px solid red;">
+        &nbsp;
+        <br>
+        &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+        <div style="height: 32px; width: 40px; border: none;">
+            <div class="mod-stat atk" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">atk</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_5_0" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats atk"></td>
+    <td id="c32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="d32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="e32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="f32" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="i32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="j32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="k32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="l32" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="p32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="q32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="r32" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="u32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="v32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="w32" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="x32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="y32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="z32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="A32" style="border-right: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="B32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="2" id="C32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="3" id="D32">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td rowspan="4" id="E32" style="border-right: 1px solid red;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat def" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">def</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_5_1" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+    <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+    <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats def"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_5_0_Name"></span>
+    <div id="0_5_0_Acc" style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;"></div>
+    </td>
+    <td id="a33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="b33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="h33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="n33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="p33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="r33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="t33">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spA" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spA</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_5_2" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    
+    <td class="blueStats spA"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_5_1_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_5_1_Acc"></div>
+    </td>
+    <td id="a34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="b34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="h34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="n34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="p34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="r34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="2" id="t34">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spD" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spD</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_5_3" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spD"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-right: 1px solid grey;">
+    <span id="0_5_2_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_5_2_Acc"></div>
+    </td>
+    <td id="a35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="b35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="h35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="n35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="p35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="r35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="3" id="t35">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td>
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    
+    </tr>
+    <tr>
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <div class="mod-stat spe" style="max-height: 30px; max-width: 30px; position: relative; top: -0.1em; left: -0.2em; transform: rotate(270deg);">spe</div>
+    </th>
+    
+    </div>
+    
+    <th class="blueNames" style="border: none;">
+    <div style="height: 32px; width: 40px; border: none;">
+    <span class="form-control input-stat merge-bottom-input" id="0_5_4" name="first" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: 0em; left: -1em;">0</span>
+    <div class="btn-group btn-block" aria-label="plus-minus" style="max-height: 30px; max-width: 30px; transform: rotate(270deg); position: relative; top: -1.4em; right: -0.2em;">
+    <button type="button" class="btn btn-sss btn-danger minus-button merge-top-left-button">
+        <span class="glyphicon glyphicon-minus">-</span>
+    </button>
+    <button type="button" class="btn btn-sss btn-success plus-button merge-top-right-button">
+        <span class="glyphicon glyphicon-plus">+</span>
+    </button>
+    </div>
+    </div>
+    </th>
+    <td class="blueStats spe" style="border-bottom: 2px solid blue;"></td>
+    <td colspan="3" class="moveText bluemoveText" style="border-bottom: 2px solid blue; border-right: 1px solid grey;">
+    <span id="0_5_3_Name"></span>
+    <div style="text-align: left; color: black; text-shadow: none; position: relative; top: -18px; right: -10px; max-height: 0px;" id="0_5_3_Acc"></div>
+    </td>
+    <td id="a36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="b36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey;border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="g36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="h36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="m36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="n36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="o36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="p36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="q36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="r36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 1px solid grey; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td id="s36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td colspan="4" id="t36" style="border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    <td style="border-right: 2px solid red; border-bottom: 1px solid grey;">
+    &nbsp;
+    <br>
+    &nbsp;
+    </td>
+    </tr>
+    </table>
+    </div>
+
+    <div class="StageModifiers"></div>
+
+    </div>
+    <div></div>
+
+
+        <span style="font-weight: bold; color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; ">Current Weather: <span class="weather" style="font-weight: bold">None</span></span>
+    <br>
+
+        <span style="font-weight: bold; color: white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; ">Weather override controls:</span>
+        
+    <br>
+    <button type="button" id="none" class="btn revisualise btn-light">None</button>
+    <button type="button" id="sun" class="btn revisualise btn-warning">Sun</button>
+    <button type="button" id="rain" class="btn revisualise btn-primary">Rain</button>
+    <br>
+    <button type="button" id="hail" class="btn revisualise btn-info">Hail&nbsp;</button>
+    <button type="button" id="sand" class="btn revisualise btn-sand">Sand</button>
+    <button type="button" id="fog" class="btn revisualise btn-secondary">Fog&nbsp;</button>
+    <br>
+    <button type="button" class="btn revisualise btn-success" style="font-size: 1.5em;">Re-calculate Damage</button>
+
+    <div style="color:white; font-size: 1.3em; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; ">
+        Gimmick list; 
+        <div id="gimmick">[&#39;fog&#39;]</div>
+        <br>
+        metagame list; 
+        <br>
+         [&#39;advanced&#39;]
+        <br>
+        <br>
+        Switching; 
+        <br>
+        always
+        <br>
+        <br>
+
+        Match ID: 
+        <div id="matchid">79936</div>
+    </div>
+    <div style="position: absolute; top: 0.2em; right: 0.2em; font-size: 1.5em; text-align: right;">
+        <button type="button" class="btn revisualise btn-success">Re-calculate Damage</button>
+    </div>
+
+    <br>
+</main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+<!--<script src="./utils.js"></script>
+<script src="./websocket.js"></script>-->
+<script src="script.js"></script>
